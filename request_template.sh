@@ -10,7 +10,7 @@ echo '{
   },
   "response": {
     "status": '$4',
-    "bodyFileName": "../__files/'$5'"
+    "bodyFileName": "'$5'"
   }
 }' >> ./wiremock/mappings/$1
 
