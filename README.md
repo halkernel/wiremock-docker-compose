@@ -41,7 +41,7 @@ For generating a request, use the parameters following the model of the paramete
 
 ```zsh
 # $1=FILENAME $2=VERB $3=URI $4=STATUS $5=BODYFILE
-./request_template.sh request_file.sh GET /api/hello-world 200 response_file.json
+./request_template.sh request_file.json GET /api/hello-world 200 response_file.json
 ```
 
 The update is going to copy the files to the container and reload it: 
