@@ -36,7 +36,7 @@ For starting the container execute:
 ```zsh
 docker-compose up
 ```
-For generating a request, use the parameters following the model of the parameters: 
+For generating a request, use the parameters following the model bellow: 
 
 
 ```zsh
