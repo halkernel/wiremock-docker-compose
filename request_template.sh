@@ -10,9 +10,18 @@ echo '{
   },
   "response": {
     "status": '$4',
+    "headers":
+    {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS, PUT, DELETE",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Headers": "Content-Type, Origin, Accept",
+        "Access-Control-Expose-Headers": "Content-Type,  Origin, Accept"
+    },
     "bodyFileName": "'$5'"
   }
-}' >> ./wiremock/mappings/$1
+}' > ./wiremock/mappings/$1
 
-echo '{}' >> ./wiremock/__files/$5
+echo '{}' > ./wiremock/__files/$5
 echo "Files created successfully!"
